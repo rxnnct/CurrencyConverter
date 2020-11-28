@@ -1,5 +1,6 @@
 package ru.rxnnct.currencyconvertertrialproject.service;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -12,11 +13,12 @@ import java.io.IOException;
 
 @Component
 public class CbrXmlHandler extends BaseXmlHandler {
+    @Value("${currencyconvertertrialproject.CbrXmlHandler.url}")
+    String url;
 
     @Override
     public void saveXmlToDatabase() throws IOException, SAXException, ParserConfigurationException {
-
-        Document document = getXmlFromUrl("http://www.cbr.ru/scripts/XML_daily.asp"); //todo: to properties
+        Document document = getXmlFromUrl(url);
 
         //todo: save data
         document.getDocumentElement().normalize();
