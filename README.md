@@ -1,6 +1,6 @@
 # CurrencyConverterTrialProject
 
-## DB Creation (psql):
+## DB creation (psql):
 create database currency_converter; 
 
 \c currency_converter
