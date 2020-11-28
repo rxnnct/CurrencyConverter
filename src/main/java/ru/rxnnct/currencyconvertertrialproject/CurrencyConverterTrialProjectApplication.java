@@ -8,6 +8,7 @@ public class CurrencyConverterTrialProjectApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CurrencyConverterTrialProjectApplication.class, args);
+		//todo: download cbr on start
 	}
 
 }
