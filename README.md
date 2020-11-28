@@ -1,25 +1,25 @@
 # CurrencyConverterTrialProject
 
 ## DB creation (psql):
-create database currency_converter; 
+create database currency_converter;<br/>
 
-\c currency_converter
+\c currency_converter<br/>
 
-create table exchange_rate_journal(
-	id bigint primary key,
-	cbr_id varchar(255),
-	num_code bigint,
-	nominal varchar(255),
-	name varchar(255),
-	value bigint,
-	date varchar(255)
-);
+create table exchange_rate_journal(<br/>
+id bigint primary key,<br/>
+cbr_id varchar(255),<br/>
+num_code bigint,<br/>
+nominal varchar(255),<br/>
+name varchar(255),<br/>
+value bigint,<br/>
+date varchar(255)<br/>
+);<br/>
 
-create table calculation_journal(
-	id bigint primary key,
-	currency_from bigint references exchange_rate_journal(id),
-	currency_to bigint references exchange_rate_journal(id),
-	amount_from bigint,
-	amount_to bigint,
-	date varchar(255)
-);
+create table calculation_journal(<br/>
+id bigint primary key,<br/>
+currency_from bigint references exchange_rate_journal(id),<br/>
+currency_to bigint references exchange_rate_journal(id),<br/>
+amount_from bigint,<br/>
+amount_to bigint,<br/>
+date varchar(255)<br/>
+);<br/>
