@@ -23,3 +23,8 @@ amount_from bigint,<br/>
 amount_to bigint,<br/>
 date varchar(255)<br/>
 );<br/>
+
+create table application_state(<br/>
+id bigint primary key,<br/>
+last_download_date varchar(255)<br/>
+);<br/>
