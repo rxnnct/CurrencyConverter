@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ru.rxnnct</groupId>
-	<artifactId>currencyconvertertrialproject</artifactId>
+	<artifactId>currencyconverter</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>CurrencyConverter</name>
 	<description>Trial project</description>
