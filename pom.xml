@@ -11,7 +11,7 @@
 	<groupId>ru.rxnnct</groupId>
 	<artifactId>currencyconvertertrialproject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>CurrencyConverterTrialProject</name>
+	<name>CurrencyConverter</name>
 	<description>Trial project</description>
 
 	<properties>

@@ -1,4 +1,4 @@
-package ru.rxnnct.currencyconvertertrialproject.domain;
+package ru.rxnnct.currencyconverter.domain;
 
 import lombok.Data;
 

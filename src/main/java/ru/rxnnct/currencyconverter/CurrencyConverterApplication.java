@@ -1,4 +1,4 @@
-package ru.rxnnct.currencyconvertertrialproject;
+package ru.rxnnct.currencyconverter;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -6,12 +6,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
-public class CurrencyConverterTrialProjectApplication {
+public class CurrencyConverterApplication {
 	@Autowired
 	private ApplicationContext appContext;
 
 	public static void main(String[] args) {
-		SpringApplication.run(CurrencyConverterTrialProjectApplication.class, args);
+		SpringApplication.run(CurrencyConverterApplication.class, args);
 	}
 
 }

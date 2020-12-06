@@ -1,4 +1,4 @@
-package ru.rxnnct.currencyconvertertrialproject.service;
+package ru.rxnnct.currencyconverter.service;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
