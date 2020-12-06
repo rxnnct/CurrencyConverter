@@ -1,4 +1,4 @@
-# CurrencyConverterTrialProject
+# CurrencyConverter
 
 ## DB creation (psql):
 create database currency_converter;<br/>

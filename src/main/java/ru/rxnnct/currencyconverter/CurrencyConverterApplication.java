@@ -7,11 +7,11 @@ import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class CurrencyConverterApplication {
-	@Autowired
-	private ApplicationContext appContext;
+    @Autowired
+    private ApplicationContext appContext;
 
-	public static void main(String[] args) {
-		SpringApplication.run(CurrencyConverterApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(CurrencyConverterApplication.class, args);
+    }
 
 }

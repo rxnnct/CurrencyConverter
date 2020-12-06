@@ -13,14 +13,12 @@ import java.io.IOException;
 
 @Component
 public class CbrXmlHandler extends BaseXmlHandler {
-    @Value("${currencyconvertertrialproject.CbrXmlHandler.url}")
+    @Value("${currencyconverter.CbrXmlHandler.url}")
     String url;
 
     @Override
     public void saveXmlToDatabase() throws IOException, SAXException, ParserConfigurationException {
         Document document = getXmlFromUrl(url);
-
-
 
 
         document.getDocumentElement().normalize();
