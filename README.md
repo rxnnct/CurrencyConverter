@@ -28,3 +28,6 @@ create table application_state(<br/>
 id bigint primary key,<br/>
 last_download_date varchar(255)<br/>
 );<br/>
+
+insert into application_state (id, last_download_date)<br/>
+values (1, '01.01.1971');<br/>

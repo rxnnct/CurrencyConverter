@@ -8,11 +8,18 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ApplicationRunnerImpl implements ApplicationRunner {
-    @Autowired
+    final
     ApplicationContext applicationContext;
+
+    @Autowired
+    public ApplicationRunnerImpl(ApplicationContext applicationContext) {
+        this.applicationContext = applicationContext;
+    }
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        applicationContext.getBean(CbrXmlHandler.class).saveXmlToDatabase();
+        if (!applicationContext.getBean(CbrXmlHandler.class).checkDataRelevance()) {
+            applicationContext.getBean(CbrXmlHandler.class).saveXmlToDatabase();
+        }
     }
 }
