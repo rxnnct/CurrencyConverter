@@ -10,11 +10,12 @@ import java.io.IOException;
 import java.net.URL;
 
 public abstract class BaseXmlHandler {
+    protected String lastDownloadDate;
 
     public abstract void saveXmlToDatabase() throws IOException, SAXException, ParserConfigurationException;
 
-
     public Document getXmlFromUrl(String url) throws ParserConfigurationException, IOException, SAXException {
+        //todo: the same for a controller
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
         Document document = documentBuilder.parse(new URL(url).openStream());

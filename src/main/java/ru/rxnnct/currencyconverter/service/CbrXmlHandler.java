@@ -22,7 +22,6 @@ import java.util.List;
 public class CbrXmlHandler extends BaseXmlHandler {
     private final ApplicationStateRepo applicationStateRepo;
     private final ExchangeRateRepo exchangeRateRepo;
-    private String lastDownloadDate;
 
     @Value("${currencyconverter.CbrXmlHandler.url}")
     String url;
@@ -33,7 +32,7 @@ public class CbrXmlHandler extends BaseXmlHandler {
         this.exchangeRateRepo = exchangeRateRepo;
 
         List<ApplicationState> applicationStates = applicationStateRepo.findAll();
-        lastDownloadDate = applicationStates.get(0).getLastDownloadDate();
+        this.lastDownloadDate = applicationStates.get(0).getLastDownloadDate();
     }
 
     @Override
@@ -42,8 +41,8 @@ public class CbrXmlHandler extends BaseXmlHandler {
         document.getDocumentElement().normalize();
 
         String dateFromResponse = document.getDocumentElement().getAttribute("Date");
+        //todo: update dateFromResponse
 
-        System.out.println(dateFromResponse);
 //        System.out.println("Root element :" + document.getDocumentElement().getNodeName());
 //        System.out.println(document.getDocumentElement().getAttribute("Date"));
         NodeList nodeList = document.getElementsByTagName("Valute");
