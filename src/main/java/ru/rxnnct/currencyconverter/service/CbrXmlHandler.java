@@ -43,7 +43,7 @@ public class CbrXmlHandler extends BaseXmlHandler {
         String dateFromResponse = document.getDocumentElement().getAttribute("Date");
         //todo: update dateFromResponse
 
-//        System.out.println("Root element :" + document.getDocumentElement().getNodeName());
+//        System.out.println("Root element : " + document.getDocumentElement().getNodeName());
 //        System.out.println(document.getDocumentElement().getAttribute("Date"));
         NodeList nodeList = document.getElementsByTagName("Valute");
 //        System.out.println("----------------------------");

@@ -8,8 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ApplicationRunnerImpl implements ApplicationRunner {
-    final
-    ApplicationContext applicationContext;
+    private final ApplicationContext applicationContext;
 
     @Autowired
     public ApplicationRunnerImpl(ApplicationContext applicationContext) {
