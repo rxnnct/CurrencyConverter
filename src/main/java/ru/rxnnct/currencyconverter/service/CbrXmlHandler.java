@@ -62,7 +62,7 @@ public class CbrXmlHandler extends BaseXmlHandler {
         }
     }
 
-    public boolean checkDataRelevance(){
+    boolean checkDataRelevance(){
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
         Date currentDate = new Date();
         String stringDate = dateFormat.format(currentDate);
